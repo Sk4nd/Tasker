@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Tasker</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="Add">ADD</string>
+    <string name="Clear">CLEAR</string>
+    <string name="List">LIST</string>
+    <string name="Evento">Evento</string>
+    <string name="Azione">Azione</string>
+    <string name="ora">ora</string>
+    <string name="giorno">giorno</string>
+    <string name="data">data</string>
+    <string name="batteria">batteria</string>
+    <string name="GPS">GPS</string>
+    <string name="suoneria">suoneria</string>
+    <string name="luminosita">luminosita</string>
+    <string name="elimina">ELIMINA</string>
+    <string name="next">NEXT</string>
+
+</resources>
