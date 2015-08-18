@@ -12,32 +12,6 @@ import android.widget.RadioButton;
 
 public class EventiActivity extends Activity {
 	
-	
-	//costanti controllo
-	private static final int ORA=1;
-	private static final int GIORNO=2;
-	private static final int MESE=3;
-	private static final int ANNO=4;
-	private static final int BATTERIA=5;
-	private static final int GPS=6;
-	private static final int TEMPO=7;
-	private static final int TEMPERATURA=8;
-	
-	//costanti azioni
-	private static final int NORMALE=1;
-	private static final int VIBRAZIONE=2;
-	private static final int SILENZIOSO=3;
-	private static final int LUMINOSITA_LOW=4;
-	private static final int LUMINOSITA_MED=5;
-	private static final int LUMINOSITA_HIG=6;
-	private static final int SEND_SMS=7;
-	private static final int SEND_TOAST=8;
-	private static final int NOTIFICA=9;
-	//TODO
-	//imposta sveglia
-	//blocca chiamate e messaggi
-	private static final int NULL=0;
-	
 	private MyOpenHelper oh;
 	private DataSource db;
 	
@@ -186,8 +160,6 @@ public class EventiActivity extends Activity {
     		if (i==12)
     			break;
     		else if (i==1) {
-    			String tipoControllo;
-    			String tipoAzione;
     			evento1.setText(cu.getInt(cu.getColumnIndex("id"))+" "+
     					cu.getInt(cu.getColumnIndex("tipocontrollo"))+" "+
     					cu.getInt(cu.getColumnIndex("tipoazione"))+" "+

@@ -1,5 +1,7 @@
 package it.skand.tasker;
 
+//CAMBIA NOME AI CAMPI (DATE, TIME, RINGTONE, ECC) E AGGIUNGI IL ";"
+
 import java.util.LinkedList;
 import java.util.List;
 

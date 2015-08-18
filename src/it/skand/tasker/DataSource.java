@@ -1,5 +1,7 @@
 package it.skand.tasker;
 
+//DA CAMBIARE. AGGIUNGI CAMPO PER VARIABILE AGGIORNABILE O CREA UN ALTRO DB
+
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;

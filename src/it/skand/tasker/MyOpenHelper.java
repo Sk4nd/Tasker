@@ -15,7 +15,6 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 	
 	@Override
 	public void onCreate(SQLiteDatabase db) {
-		// TODO Auto-generated method stub
 		String create="CREATE TABLE EVENTI(id INT, tipocontrollo INT, "+
 				"tipoazione INT, var1 TEXT, var2 TEXT, var3 TEXT, var4 TEXT, var5 TEXT, " +
 				"testoSMS TEXT, numSMS TEXT);";
@@ -24,7 +23,6 @@ public class MyOpenHelper extends SQLiteOpenHelper {
 
 	@Override
 	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-		// TODO Auto-generated method stub
 		db.execSQL("DROP TABLE IF EXISTS EVENTI");
 		onCreate(db);
 	}

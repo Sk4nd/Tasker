@@ -13,7 +13,7 @@ public class TextList {
 		keyword= new LinkedList<String>();
 	}
 	
-	public void inizialize () {
+	public void initialize () {
 		String[] temp=text.split("\\s+");
 		
 		for (int i=0; i<temp.length; i++) {

@@ -35,19 +35,7 @@ public class Servizio extends Service {
 	private static final int GPS=6;
 	private static final int TEMPO=7;
 	private static final int TEMPERATURA=8;
-	//TODO
 	
-	//costanti azioni
-	private static final int NORMALE=1;
-	private static final int VIBRAZIONE=2;
-	private static final int SILENZIOSO=3;
-	private static final int LUMINOSITA_LOW=4;
-	private static final int LUMINOSITA_MED=5;
-	private static final int LUMINOSITA_HIG=6;
-	private static final int SEND_SMS=7;
-	private static final int SEND_TOAST=8;
-	private static final int NOTIFICA=9;
-	//TODO
 	private static final int NULL=0;
 	
 	private static final int RICHIESTA=11;
@@ -94,6 +82,8 @@ public class Servizio extends Service {
 		//puo essere messo in una funzione
 		for (int i=0; i<NUM_EVENTI; i++) {
 			
+			
+			//VA CAMBIATO. ESISTONO SOLO GLI EVENTI TIME AND DATE
 			if (eventi[i].getTipoControllo()==ORA || eventi[i].getTipoControllo()==GIORNO ||
 						eventi[i].getTipoControllo()==MESE || eventi[i].getTipoControllo()==ANNO) {
 							
@@ -154,7 +144,7 @@ public class Servizio extends Service {
 
 		//AlarmManager service
 		AlarmManager am = (AlarmManager) getSystemService(ALARM_SERVICE);
-		am.setRepeating(AlarmManager.RTC_WAKEUP, 0, 61000, sender);
+		am.setRepeating(AlarmManager.RTC_WAKEUP, 0, 41000, sender);
 	}
 	
 	public void controlloBatteria (int tipoAzione, int numEvento, int tipoControllo, int livello) {
